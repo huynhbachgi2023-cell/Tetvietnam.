@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hương Sắc Ngày Tết Cổ Truyền Việt Nam - Tin Học 12</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.7; margin: 0; padding: 0; background-color: #fff6e5; color: #2c1e16; overflow-x: hidden; }
+        .petal { position: fixed; top: -10%; font-size: 1.25em; user-select: none; pointer-events: none; z-index: 1; animation: fall linear infinite; }
+        @keyframes fall { 0% { transform: translateY(0) rotate(0deg); opacity: 1; } 100% { transform: translateY(110vh) rotate(360deg); opacity: 0.25; } }
+        header { background: linear-gradient(135deg, #990000, #d90000, #b30000); color: #ffd700; text-align: center; padding: 30px 15px; border-bottom: 6px solid #ffd700; }
+        header h1 { margin: 0; font-size: 1.85em; text-transform: uppercase; text-shadow: 2px 2px 4px rgba(0,0,0,0.4); }
+        header p { color: #fff8dc; font-style: italic; margin-top: 8px; }
+        nav { background-color: #7a0000; text-align: center; padding: 10px 5px; position: sticky; top: 0; z-index: 100; }
+        nav a { color: #ffd700; text-decoration: none; margin: 4px 6px; padding: 6px 12px; border-radius: 20px; font-weight: bold; font-size: 0.9em; display: inline-block; }
+        nav a:hover { background-color: #ffd700; color: #800000; }
+        main { max-width: 920px; margin: 20px auto; background: #ffffff; padding: 25px; border-radius: 14px; box-shadow: 0 8px 24px rgba(139,0,0,0.12); border: 2px solid #f3d299; position: relative; z-index: 10; }
+        section { margin-bottom: 32px; }
+        h2 { color: #b30000; border-left: 6px solid #ffd700; background: linear-gradient(to right, #fff3cd, transparent); padding: 8px 15px; border-radius: 0 8px 8px 0; margin-bottom: 16px; font-size: 1.3em; }
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 18px; }
+        .card { background: #fffdf9; border: 1.5px solid #f0d9b5; padding: 14px; border-radius: 10px; text-align: center; }
+        .audio-bg { background: linear-gradient(145deg, #fff8e1, #ffecb3); border-color: #ffd54f; }
+        .card p { margin: 0 0 8px 0; font-weight: bold; color: #8d4004; }
+        audio { width: 100%; height: 40px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.95em; }
+        th, td { border: 1px solid #e6c280; padding: 11px; text-align: left; }
+        th { background-color: #b30000; color: #ffd700; }
+        tr:nth-child(even) { background-color: #fffaf0; }
+        figure { margin: 0; }
+        figure img { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; border: 1px solid #e0c088; }
+        figcaption, .caption { margin-top: 8px; font-size: 0.9em; color: #5c3a21; font-style: italic; font-weight: normal; }
+        video { width: 100%; border-radius: 8px; border: 2px solid #d4af37; background: #000; }
+        .interactive-box { background: linear-gradient(135deg, #fff5f5, #fffbeb); border: 2px solid #ffd700; border-radius: 12px; padding: 20px; text-align: center; }
+        .btn-tet { background-color: #d90000; color: #ffd700; border: 2px solid #ffd700; padding: 12px 24px; font-size: 1.05em; font-weight: bold; border-radius: 25px; cursor: pointer; position: relative; z-index: 20; }
+        #loi-chuc { margin-top: 15px; font-weight: bold; color: #990000; font-size: 1.1em; min-height: 28px; }
+        .links-box { background-color: #fdf2f2; border: 1.5px dashed #d9534f; padding: 16px 25px; border-radius: 10px; }
+        .links-box a { color: #b30000; font-weight: bold; text-decoration: none; }
+        .footer-box { background: linear-gradient(135deg, #800000, #b30000); color: #fff8dc; text-align: center; padding: 24px 15px; margin-top: 30px; border-top: 4px solid #ffd700; position: relative; z-index: 10; }
+        .footer-box p { margin: 6px 0; }
+        .footer-box a { color: #ffd700; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="petal" style="left: 10%; animation-duration: 8s;">🌼</div>
+    <div class="petal" style="left: 35%; animation-duration: 11s; animation-delay: 2s;">🌸</div>
+    <div class="petal" style="left: 65%; animation-duration: 9s; animation-delay: 1s;">🌼</div>
+    <div class="petal" style="left: 88%; animation-duration: 12s; animation-delay: 3s;">🌸</div>
+
+    <header>
+        <h1>🌸 Hương Sắc Ngày Tết Cổ Truyền Việt Nam 🌸</h1>
+        <p>Sản phẩm thực hành Tin học lớp 12 – Chủ đề ngày Tết Việt Nam</p>
+    </header>
+
+    <nav>
+        <a href="#muc1">🎵 Nhạc Xuân</a>
+        <a href="#muc2">📜 Ý nghĩa</a>
+        <a href="#muc3">📅 Phong tục</a>
+        <a href="#muc4">🖼️ Hình ảnh</a>
+        <a href="#muc5">🎬 Video</a>
+        <a href="#muc6">🧧 Hái lộc</a>
+        <a href="#muc7">🔗 Liên kết</a>
+    </nav>
+
+    <main>
+        <section id="muc1">
+            <h2>1. Giai điệu rộn ràng ngày Tết</h2>
+            <div class="grid-2">
+                <div class="card audio-bg">
+                    <p>🎶 Giai điệu mùa xuân 1</p>
+                    <audio controls><source src="amthanh1.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="card audio-bg">
+                    <p>🎶 Giai điệu mùa xuân 2</p>
+                    <audio controls><source src="amthanh2.mp3" type="audio/mpeg"></audio>
+                </div>
+            </div>
+        </section>
+
+        <section id="muc2">
+            <h2>2. Ý nghĩa văn hóa Tết Nguyên Đán</h2>
+            <p><strong>Tết Nguyên Đán</strong> (hay còn gọi là Tết Cả, Tết Ta, Tết Âm lịch) là dịp lễ quan trọng và thiêng liêng nhất trong năm của dân tộc Việt Nam. Đây không chỉ là thời khắc chuyển giao giữa năm cũ và năm mới, mà còn là dịp để mỗi người con đất Việt hướng về cội nguồn, tưởng nhớ tổ tiên và sum họp bên gia đình.</p>
+            <p>Từ những ngày cuối tháng Chạp, khắp mọi miền Tổ quốc đều rộn ràng không khí chuẩn bị đón xuân. Người dân dọn dẹp, trang hoàng nhà cửa, sắm sửa mâm ngũ quả và gói những chiếc <strong>bánh chưng xanh, bánh tét</strong> đậm đà hương vị truyền thống. Phong tục lì xì đầu năm, chúc Tết ông bà và đi lễ chùa cầu bình an đã trở thành nét đẹp nhân văn sâu sắc, gắn kết tình thân và gửi gắm ước vọng về một năm mới <em>An Khang – Thịnh Vượng – Vạn Sự Như Ý</em>.</p>
+        </section>
+
+        <section id="muc3">
+            <h2>3. Các mốc thời gian & phong tục tiêu biểu</h2>
+            <table>
+                <tr>
+                    <th>Thời gian</th>
+                    <th>Tên gọi</th>
+                    <th>Hoạt động truyền thống</th>
+                </tr>
+                <tr>
+                    <td><strong>23 tháng Chạp</strong></td>
+                    <td>Lễ cúng Ông Công Ông Táo</td>
+                    <td>Dọn dẹp bếp núc, tiễn Táo Quân về trời báo cáo việc năm cũ.</td>
+                </tr>
+                <tr>
+                    <td><strong>Đêm 30 Tết</strong></td>
+                    <td>Lễ Trừ Tịch (Giao thừa)</td>
+                    <td>Cúng giao thừa, đón thời khắc chuyển giao năm mới, hái lộc đầu xuân.</td>
+                </tr>
+                <tr>
+                    <td><strong>Mùng 1 – Mùng 3</strong></td>
+                    <td>Tết Cha, Tết Mẹ, Tết Thầy</td>
+                    <td>Chúc Tết ông bà, cha mẹ, thầy cô; mừng tuổi (lì xì) lấy may đầu năm.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="muc4">
+            <h2>4. Hình ảnh biểu tượng ngày Tết Việt</h2>
+            <div class="grid-2">
+                <figure class="card">
+                    <img src="banhchungxanh.jpg" alt="Bánh chưng xanh ngày Tết">
+                    <figcaption>Hình 1: Bánh chưng xanh – Tinh hoa ẩm thực truyền thống dịp Tết cổ truyền.</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="hoamai.jpg" alt="Hoa mai vàng khoe sắc">
+                    <figcaption>Hình 2: Hoa mai vàng nở rộ báo hiệu mùa xuân phương Nam ấm áp.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="muc5">
+            <h2>5. Video không khí & sắc xuân ngày Tết</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <video controls><source src="video1.mp4" type="video/mp4"></video>
+                    <p class="caption">Video 1: Không khí rộn ràng chuẩn bị đón Tết cổ truyền.</p>
+                </div>
+                <div class="card">
+                    <video controls><source src="video2.mp4" type="video/mp4"></video>
+                    <p class="caption">Video 2: Sắc hoa mùa xuân tươi thắm trên khắp mọi miền.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="muc6">
+            <h2>6. Góc tương tác: Hái lộc lời chúc đầu năm</h2>
+            <div class="interactive-box">
+                <p>Nhấn vào bao lì xì bên dưới để nhận lời chúc may mắn đầu năm dành riêng cho bạn!</p>
+                <button type="button" class="btn-tet" onclick="const ds=['🎉 Chúc bạn năm mới Học giỏi – Đỗ đạt – Vạn sự như ý!','🌸 Chúc gia đình An Khang Thịnh Vượng – Sức khỏe dồi dào!','💰 Năm mới phát tài phát lộc – Tiền vào như nước, niềm vui ngập tràn!','✨ Chúc tập thể 12A4 Trường THCS và THPT Hòa Thuận đạt điểm 10 rực rỡ!']; document.getElementById('loi-chuc').innerHTML = ds[Math.floor(Math.random()*ds.length)];">🧧 Mở Bao Lì Xì Lời Chúc 🧧</button>
+                <div id="loi-chuc"></div>
+            </div>
+        </section>
+
+        <section id="muc7">
+            <h2>7. Liên kết tìm hiểu thêm về Tết Việt Nam</h2>
+            <div class="links-box">
+                <ul>
+                    <li>📖 Tìm hiểu lịch sử & phong tục: <a href="https://wikipedia.org" target="_blank">Bách khoa toàn thư mở Wikipedia - Tết Nguyên Đán</a></li>
+                    <li>🏛️ Khám phá văn hóa & lễ hội Việt Nam: <a href="https://bvhttdl.gov.vn" target="_blank">Cổng thông tin điện tử Bộ Văn hóa, Thể thao và Du lịch</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer-box">
+        <p><strong>Nhóm thực hiện: Trần Huỳnh Bắc & Võ Bình Minh – Lớp 12A4</strong></p>
+        <p>Trường THCS và THPT Hòa Thuận | Môn Tin học 12 – Chủ đề : Tạo trang web ngày Tết</p>
